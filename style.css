@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(241, 253, 133);
+    background-image: url('dick.png');
+  }
+.game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+    width: 500px;
+    height: 205px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: rgb(6, 96, 60);
+    position:relative;
+    top: 150px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+  
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: rgb(255, 0, 0);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    border-radius: 25px;
+    border: 2px solid black;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+    font-size: larger;
+    position: absolute;
+    display: flex;
+    background-color: beige;
+    left: 46rem;
+    top: 10rem;
+    border: 2px solid black;
+
+}
